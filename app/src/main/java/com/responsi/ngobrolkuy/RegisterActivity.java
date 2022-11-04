@@ -14,7 +14,6 @@ public class RegisterActivity extends AppCompatActivity {
     private String s_uname, s_email, s_pass, s_con_pass;
     private Button register, btnmasuk;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
