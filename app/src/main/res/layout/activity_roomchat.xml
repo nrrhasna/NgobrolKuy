@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_drawable"
+    tools:context=".RoomChatActivity">
+    <TextView
+        android:id="@+id/ngobrolText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngobrol"
+        android:textColor="@color/white"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kuy"
+        android:textColor="@color/pink"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ngobrolText"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="4dp"/>
+    <ImageView
+        android:id="@+id/imgSetting"
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:src="@drawable/setting"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/ngobrolText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="64dp"
+        android:layout_marginHorizontal="32dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ct1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ft3"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/man"
+                    app:layout_constraintStart_toStartOf="@id/ct1"
+                    app:layout_constraintTop_toTopOf="@id/ct1" />
+
+                <TextView
+                    android:id="@+id/namachat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Juned"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@id/ft1"
+                    app:layout_constraintTop_toTopOf="@id/ft1" />
+
+                <TextView
+                    android:id="@+id/tc.chat3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Bro nongkrong yuk"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    app:layout_constraintStart_toStartOf="@+id/tv.namachat"
+                    app:layout_constraintTop_toBottomOf="@+id/tv.namachat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.30"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="@id/ct1"
+                    app:layout_constraintTop_toBottomOf="@id/tv.namachat" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ft2"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/grad"
+                    app:layout_constraintStart_toStartOf="@id/ct1"
+                    app:layout_constraintTop_toBottomOf="@+id/ft1" />
+
+                <TextView
+                    android:id="@+id/chatdua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Crush"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@id/ft2"
+                    app:layout_constraintTop_toTopOf="@id/ft2" />
+
+                <TextView
+                    android:id="@+id/chat2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Assalamualaikum Ukhti"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    app:layout_constraintStart_toStartOf="@+id/chatdua"
+                    app:layout_constraintTop_toBottomOf="@+id/chatdua" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.20"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="@id/ct1"
+                    app:layout_constraintTop_toBottomOf="@id/chatdua" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ft1"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/man"
+                    app:layout_constraintStart_toStartOf="@id/ct1"
+                    app:layout_constraintTop_toTopOf="@id/ct1" />
+
+                <TextView
+                    android:id="@+id/tv.namachat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Juned"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@id/ft1"
+                    app:layout_constraintTop_toTopOf="@id/ft1" />
+
+                <TextView
+                    android:id="@+id/tc.chat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Bro nongkrong yuk"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    app:layout_constraintStart_toStartOf="@+id/tv.namachat"
+                    app:layout_constraintTop_toBottomOf="@+id/tv.namachat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.30"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="@id/ct1"
+                    app:layout_constraintTop_toBottomOf="@id/tv.namachat" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

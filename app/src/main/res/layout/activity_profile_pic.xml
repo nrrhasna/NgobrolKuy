@@ -7,7 +7,7 @@
     android:background="@drawable/gradient_drawable"
     tools:context=".ProfilePicActivity">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profilePic"
         android:layout_width="500px"
         android:layout_height="500px"
@@ -26,6 +26,7 @@
         app:layout_constraintBottom_toBottomOf="@id/profilePic"/>
 
     <ImageView
+        android:id="@+id/tambahft"
         android:layout_width="100px"
         android:layout_height="100px"
         android:src="@drawable/ic_baseline_edit_24"
@@ -35,6 +36,7 @@
         app:layout_constraintBottom_toBottomOf="@id/pinkCircle"/>
 
     <ImageView
+        android:id="@+id/bintang2"
         android:layout_width="320px"
         android:layout_height="320px"
         android:src="@drawable/sparkle_logo"
@@ -61,6 +63,7 @@
 
 
     <TextView
+        android:id="@+id/skip"
         android:visibility="visible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,6 +78,7 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/selanjutnya"
         android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -85,6 +89,7 @@
         android:layout_margin="36dp">
 
         <TextView
+            android:id="@+id/lanjut"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lanjut"

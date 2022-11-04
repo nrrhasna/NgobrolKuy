@@ -29,11 +29,12 @@
         app:layout_constraintTop_toBottomOf="@id/registerTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="25dp"
         android:layout_marginStart="48dp"
         android:layout_marginEnd="48dp">
 
         <TextView
+            android:id="@+id/usernametitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -44,12 +45,14 @@
             android:textColor="@color/white"/>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/col_uname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
+            <EditText
+                android:id="@+id/uname"
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -60,7 +63,8 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:layout_marginTop="32dp"
+            android:id="@+id/emailtitle"
+            android:layout_marginTop="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -71,12 +75,14 @@
             android:textColor="@color/white"/>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/col_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
+            <EditText
+                android:id="@+id/email"
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -87,7 +93,8 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:layout_marginTop="32dp"
+            android:id="@+id/passwordtitle"
+            android:layout_marginTop="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -98,12 +105,14 @@
             android:textColor="@color/white"/>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/colpass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
+            <EditText
+                android:id="@+id/password"
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -114,7 +123,8 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:layout_marginTop="32dp"
+            android:id="@+id/confirmpass"
+            android:layout_marginTop="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -125,12 +135,15 @@
             android:textColor="@color/white"/>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/col_confirmpass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardCornerRadius="40dp"
+            android:layout_marginBottom="15dp"
             android:backgroundTint="@color/white">
 
-            <TextView
+            <EditText
+                android:id="@+id/confirm_pass"
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -145,37 +158,39 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="32dp"
+        app:cardCornerRadius="30dp"
         android:backgroundTint="@color/pink"
         app:layout_constraintTop_toBottomOf="@id/inputList"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp">
+        android:layout_marginBottom="20dp">
 
-        <TextView
+        <Button
+            android:id="@+id/btn_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="REGISTER"
-            android:fontFamily="@font/redhatdisplay_regular"
-            android:textStyle="bold"
-            android:textSize="12pt"
-            android:textColor="@color/white"
             android:layout_marginStart="18dp"
-            android:layout_marginEnd="18dp"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"/>
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/redhatdisplay_regular"
+            android:text="REGISTER"
+            android:textColor="@color/white"
+            android:textSize="8pt"
+            android:textStyle="bold" />
 
     </androidx.cardview.widget.CardView>
 
-    <TextView
+    <Button
+        android:id="@+id/masuk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sudah punya akun?"
         android:fontFamily="@font/redhatdisplay_regular"
         android:textStyle="bold"
-        android:textSize="12pt"
+        android:textSize="10pt"
         android:textColor="@color/white"
-        android:layout_margin="32dp"
+        android:layout_margin="25px"
         android:background="@drawable/rounded_outline"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
